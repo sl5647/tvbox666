@@ -81,7 +81,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://52bsj.vip:81/api/v3/file/get/52654/TVBox.json?sign=P49kdDzg6kUSp8shbu-AtL_YJOhz21c0CeExrquysiQ%3D%3A0");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
