@@ -300,7 +300,7 @@ public class LivePlayActivity extends BaseActivity {
             ((TextView) findViewById(R.id.tv_channel_bottom_number)).setText("" + channel_Name.getChannelNum());
             ((TextView) findViewById(R.id.tv_current_program_time)).setText("咦，暂无信息");
             ((TextView) findViewById(R.id.tv_current_program_name)).setText("");
-            ((TextView) findViewById(R.id.tv_next_program_time)).setText("开源测试软件,请勿商用以及播放违法内容!!!!");
+            ((TextView) findViewById(R.id.tv_next_program_time)).setText("SL影视，作者：昨日夜思影");
             ((TextView) findViewById(R.id.tv_next_program_name)).setText("");
 
             if (countDownTimer != null) {
