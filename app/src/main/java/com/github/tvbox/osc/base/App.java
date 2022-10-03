@@ -56,7 +56,19 @@ public class App extends MultiDexApplication {
         Hawk.init(this).build();
         Hawk.put(HawkConfig.DEBUG_OPEN, false);
         if (!Hawk.contains(HawkConfig.PLAY_TYPE)) {
-            Hawk.put(HawkConfig.PLAY_TYPE, 1);
+            Hawk.put(HawkConfig.PLAY_TYPE, 2);
+        }
+        //硬解码
+        if (!Hawk.contains(HawkConfig.IJK_CODEC)) {
+            Hawk.put(HawkConfig.IJK_CODEC, "硬解码");
+        }
+        //DNS
+        if (!Hawk.contains(HawkConfig.DOH_URL)) {
+            Hawk.put(HawkConfig.DOH_URL, 2);
+        }
+        //缩略图
+        if (!Hawk.contains(HawkConfig.SEARCH_VIEW)) {
+            Hawk.put(HawkConfig.SEARCH_VIEW, 2);
         }
     }
 
