@@ -81,7 +81,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://qiu.moe/mYeFE");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://52bsj.vip:81/api/v3/file/get/52652/666.json?sign=ndB4b6NC7erBzdvmMcKoNlIn6WiJtqMkNemDRnr3Y1Q%3D%3A0");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
